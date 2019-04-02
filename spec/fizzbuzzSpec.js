@@ -1,11 +1,11 @@
 
 describe('Javabuzz', function() {
 
-  var javabuzz;
+  var javabuzz
 
   beforeEach(function(){
-    javabuzz = new Javabuzz();
-  });
+    javabuzz = new Javabuzz()
+  })
 
   describe('prints fizz, buzz, fizzbuzz or number', function(){
 
@@ -14,17 +14,17 @@ describe('Javabuzz', function() {
     })
 
     it('prints buzz when divisable by 5', function(){
-      expect(javabuzz.prints(10)).toEqual('buzz');
-    });
+      expect(javabuzz.prints(10)).toEqual('buzz')
+    })
 
     it('prints fizzbuzz when divisable by 15', function(){
-      expect(javabuzz.prints(30)).toEqual('fizzbuzz');
-    });
+      expect(javabuzz.prints(30)).toEqual('fizzbuzz')
+    })
 
     it('prints a number in all other cases', function(){
-      expect(javabuzz.prints(1)).toEqual(1);
-    });
+      expect(javabuzz.prints(1)).toEqual(1)
+    })
 
-  });
+  })
 
-});
+})
